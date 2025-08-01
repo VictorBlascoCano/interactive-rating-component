@@ -1,18 +1,21 @@
-.attribution {
-	font-size: 11px;
-	text-align: center;
-	margin-top: 12px;
-	color: hsl(30, 10%, 34%);
-	& a {
-		color: hsl(228, 45%, 44%);
-	}
+:root {
+	--color-white: hsl(0, 100%, 100%);
+	--color-grey: hsl(30, 10%, 34%);
+	--color-blue: hsl(228, 45%, 44%);
+	--color-orange: hsl(25, 97%, 53%);
+	--color-gray-500: hsl(217, 12%, 63%);
+	--color-gray-900: hsl(213, 19%, 18%);
+	--color-gray-925: hsl(215, 22%, 15%);
+	--color-gray-950: hsl(216, 12%, 8%);
+
+	--ff-segoe: "Segoe UI", sans-serif;
 }
 
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
-	font-family: "Segoe UI", sans-serif;
+	font-family: var(--ff-segoe);
 }
 
 body {
@@ -21,8 +24,18 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: hsl(216, 12%, 8%);
-	color: hsl(0, 100%, 100%);
+	background-color: var(--color-gray-950);
+	color: var(--color-white);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 12px;
+	color: var(--color-grey);
+	& a {
+		color: var(--color-blue);
+	}
 }
 
 .first-section {
@@ -31,7 +44,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: hsl(215, 22%, 15%);
+	background-color: var(--color-gray-925);
 	padding: 35px;
 	border-radius: 25px;
 }
@@ -44,7 +57,7 @@ body {
 }
 
 .first-section p {
-	color: hsl(217, 12%, 63%);
+	color: var(--color-gray-500);
 	font-size: 15px;
 	margin: 0;
 	line-height: 1.5em;
@@ -65,36 +78,36 @@ button {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background-color: hsl(215, 18%, 19%);
+	background-color: var(--color-gray-900);
 	text-align: center;
-	color: hsl(217, 12%, 63%);
+	color: var(--color-gray-500);
 	font-weight: bold;
 }
 
 .button-list button:hover {
-	background-color: hsl(25, 97%, 53%);
-	color: hsl(213, 19%, 18%);
+	background-color: var(--color-orange);
+	color: var(--color-gray-900);
 }
 
 .submit {
 	padding: 10px 0;
 	border-radius: 20px;
-	background-color: hsl(25, 97%, 53%);
+	background-color: var(--color-orange);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-weight: bold;
-	color: hsl(213, 19%, 18%);
+	color: var(--color-gray-900);
 }
 
 .submit:hover {
-	background-color: hsl(0, 100%, 100%);
+	background-color: var(--color-white);
 }
 
 .star-container {
 	width: 50px;
 	height: 50px;
-	background-color: hsl(215, 18%, 19%);
+	background-color: var(--color-gray-900);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -108,8 +121,8 @@ button {
 }
 
 .button-list button.active {
-	background-color: hsl(0, 100%, 100%);
-	color: hsl(213, 19%, 18%);
+	background-color: var(--color-white);
+	color: var(--color-gray-900);
 }
 
 .second-section {
@@ -119,7 +132,7 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: hsl(215, 22%, 15%);
+	background-color: var(--color-gray-925);
 	padding: 35px;
 	border-radius: 25px;
 }
@@ -132,7 +145,7 @@ button {
 }
 
 .second-section p {
-	color: hsl(217, 12%, 63%);
+	color: var(--color-gray-500);
 	font-size: 15px;
 	margin: 0;
 	line-height: 1.5em;
@@ -147,8 +160,8 @@ button {
 
 p.score-phrase {
 	padding: 5px 15px;
-	background-color: hsl(215, 18%, 19%);
-	color: hsl(25, 97%, 53%);
+	background-color: var(--color-gray-900);
+	color: var(--color-orange);
 	border-radius: 20px;
 	margin-bottom: 10px;
 }
