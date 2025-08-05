@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<main>
-			<section class="first-section">
+			<form class="first-section">
 				<div class="star-container">
 					<img
 						src="images/icon-star.svg"
@@ -29,17 +29,61 @@
 					Please let us know how we did with your support request. All
 					feedback is appreciated to help us improve our offering!
 				</p>
-				<div class="button-list">
-					<button>1</button>
-					<button>2</button>
-					<button>3</button>
-					<button>4</button>
-					<button>5</button>
+				<div
+					class="button-list"
+					role="radiogroup"
+					aria-label="Calificaction from 1 to 5"
+				>
+					<button
+						type="button"
+						class="rating-btn"
+						data-value="1"
+						role="radio"
+						aria-checked="false"
+					>
+						1
+					</button>
+					<button
+						type="button"
+						class="rating-btn"
+						data-value="2"
+						role="radio"
+						aria-checked="false"
+					>
+						2
+					</button>
+					<button
+						type="button"
+						class="rating-btn"
+						data-value="3"
+						role="radio"
+						aria-checked="false"
+					>
+						3
+					</button>
+					<button
+						type="button"
+						class="rating-btn"
+						data-value="4"
+						role="radio"
+						aria-checked="false"
+					>
+						4
+					</button>
+					<button
+						type="button"
+						class="rating-btn"
+						data-value="5"
+						role="radio"
+						aria-checked="false"
+					>
+						5
+					</button>
 				</div>
 				<button type="submit" id="submit" name="submit" class="submit">
 					Submit
 				</button>
-			</section>
+			</form>
 			<section class="second-section">
 				<img
 					src="images/illustration-thank-you.svg"
